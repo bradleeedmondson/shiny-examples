@@ -2,8 +2,8 @@ shiny-examples
 ==============
 
 This is a collection of Shiny examples. You can see them in action on
-http://demo.shinyapps.io/example-name where `example-name` is the directory
-name of an example here, e.g. http://demo.shinyapps.io/001-hello
+`http://gallery.shinyapps.io/example-name` where `example-name` is the directory
+name of an example here, e.g. http://gallery.shinyapps.io/001-hello
 
 To run the examples locally, you can install the **shiny** package in R, and
 use the function `runGithub()`. For example, to run the example `001-hello`:
@@ -22,5 +22,4 @@ features under development. Please be cautious that such features may or may
 not end up in the final release, or they may also change according to the
 feedback.
 
-- 013
-- 015
+- 107-events

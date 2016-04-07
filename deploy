@@ -10,7 +10,7 @@
 
 if (FALSE) {
   devtools::install_github('rstudio/shiny')
-  devtools::install_github('rstudio/shinyapps')
+  devtools::install_github('rstudio/rsconnect')
 }
 
 # first, sync shiny examples
@@ -33,7 +33,7 @@ if (!file.exists('022-unicode-chinese/wqy-zenhei.ttc'))
 
 # then deploy all apps
 library(methods)
-library(shinyapps)
+library(rsconnect)
 
 # ./deploy [-d] [-p] [001-hello 002-text ...]
 apps = commandArgs(TRUE)
@@ -74,7 +74,7 @@ print(apps[unlist(lapply(apps, function(app) {
   system(paste(
     '../shiny-dev-center/_scripts/import.R',
     app,
-    sprintf('http://gallery.shinyapps.io/%s', app),
+    sprintf('https://gallery.shinyapps.io/%s', app),
     sprintf('https://github.com/rstudio/shiny-examples/tree/master/%s', app)
   ))
 })) != 0])
